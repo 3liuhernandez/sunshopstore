@@ -1,0 +1,91 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: Nick
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+.service-link .wp-caption{
+	display: block !important;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
+}
+
+.service-link:hover .wp-caption{
+	transform: scale(1.1);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.product-area .product-inner{
+	border: 1px solid transparent;
+	transition:  all .3s ease-in-out;
+}
+
+.product-area .product-inner:hover{
+	border: 1px solid #247294;
+}
+
+.product-area .product-inner .woo-entry-image{ }
+
+.product-area .product-inner .category, 
+.product-area .product-inner .btn-wrap{
+	display: none !important;
+}
+
+.product-area .product-inner .image-wrap{
+	margin-bottom: 10px !important;
+}
+
+.product-area .product-inner .title{
+	margin-bottom: 8px !important;
+}
+
+.woocommerce span.onsale,
+.woocommerce ul.products li.product li.category{
+	display: none !important;
+}
+
+.woocommerce ul.products li.product .product-inner{
+	border: 1px solid #ebebeb;
+}
+.woocommerce ul.products li.product:not(.product-category) .image-wrap .button{
+	background-color: #dd9933 !important;
+}
+.woocommerce ul.products li.product:not(.product-category) .image-wrap .button:hover{
+	background-color: #905D11 !important;
+}
+.woocommerce ul.products li.product .product-inner:hover{
+	border: none !important;
+}
+
+.woocommerce .woocommerce-pagination .page-numbers{
+	text-align: center !important;
+}
+.woocommerce .woocommerce-pagination .page-numbers li a,
+.woocommerce .woocommerce-pagination .page-numbers li span{
+	background-color: transparent;
+	font-size: 14px;
+    display: block;
+    padding: 2px 0;
+    width: 26px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+}
+.woocommerce .woocommerce-pagination .page-numbers li .current,
+.woocommerce .woocommerce-pagination .page-numbers li .page-numbers:hover{
+	color: #dd9933;
+	border-color: #dd9933;
+	background-color: transparent;
+}
+
+.woocommerce ul.products li.product li.title a:hover{
+	color: #dd9933 !important;
+}
+.woocommerce div.product form.cart+.product_meta{
+	display: none;
+}
